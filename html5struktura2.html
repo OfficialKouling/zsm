@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Struktura strony HTML 5</title>
+    <style>
+        header{
+            background: #e09994;
+            height: 80px;
+            padding: 20px;
+            text-align: center;
+            font: 1.3em Tahoma, sans-serif;
+        }
+        main {
+            background: green;
+            width: calc(60% - 4px); /*minus 2*border*/
+            height: 300px;
+            float: left;
+            border: solid red 2px;
+        }
+        aside {
+            background: rgb(119, 195, 224);
+            width: 20%;
+            height: 304px; /*plus 2*border*/
+            float: right;
+        }
+        footer{
+            background: #699963;
+            min-height: 100px;
+            clear: both;
+            padding: 10px;
+        }
+        article{
+            font: 2em Arial, sans-serif;
+            color: red;
+            text-align: center;
+            background-color: lightgray;
+            margin: 5px;
+            padding: 10px;
+        }
+        nav{
+            float: left;
+            width: calc(20% - 20px); /*minus 2*padding*/
+            background-color: lightblue;
+            height: calc(300px - 20px + 4px);
+            padding: 10px;
+        }
+        #dol{
+            background-color: lightblue;
+            min-height: 100px;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <header>abcd</header>
+    <nav>Tylko dla nawigacji na stronie</nav>
+    <main>
+        <article>
+            abcd
+        </article>
+        <article>
+            <section>
+                abcd
+            </section>
+            <section id="szczegolna">
+                abcd
+            </section>
+        </article>
+        <article>
+            abcd
+        </article>
+    </main>
+    <aside>Tylko dla dodatkowych informacji</aside>
+    <footer>abcd</footer>
+</body>
+</html>
